@@ -25,6 +25,28 @@ Administrative Stuff
 
 1. Dataset summary
 
+Below are the statistics of the dataset.
+
+|  Total Images  |Total Classes|
+|----------|----------|
+|51839|43|
+
+
+|  Data  |Number of images|Percentage|
+|----------|-----------|-----------
+|Train|34799|67%|
+|Validation|4410|8%|
+|Test|12630|12630|24%|
+
+The image shape is __32x32x3__ but running models on color images is costly and has no significant benefits in terms of results.
+So, in the preprocessing part of the notebook, we convert them to grayscale and hence the new image size is __32x32x1__ where __"1"__ signifies the depth of the image. 
+
+|  Image  | Shape | Channels |
+|----------|-----------|-----------
+|Original Image|32x32x3|3 (RGB)|
+|Processed Image|32x32x1|1 (GRAYSCALE)|
+
+
 2. Dataset exploration
 
 3. Preprocessing Data
