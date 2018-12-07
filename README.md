@@ -13,10 +13,12 @@ The steps of this project are the following:
 
 Administrative Stuff
 ---
-Instead of Tensorflow, I have used Keras to build the model. The reasons behind this are as follows:
-1. With some prior experience in Keras, I felt it would be easier to build models using Keras
-2. Keras uses Tensorflow as its backend, which means all the computation is still taken care of by Tensorflow
-3. Finally, since there were no requirements mentioning the use of Tensorflow, Keras was the best option. Confirmed with community manager at Udacity
+1. Instead of Tensorflow, I have used Keras to build the model. The reasons behind this are as follows:
+- With some prior experience in Keras, I felt it would be easier to build models using Keras
+- Keras uses Tensorflow as its backend, which means all the computation is still taken care of by Tensorflow
+- Finally, since there were no requirements mentioning the use of Tensorflow, Keras was the best option. Confirmed with community manager at Udacity
+2. The code i.e. jupyter notebook is named [Traffic_Sign_Classifier.ipynb](https://github.com/vikramriyer/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
+3. The html report is named [Traffic_Sign_Classifier.html](https://github.com/vikramriyer/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.html)
 
 ## Steps
 
