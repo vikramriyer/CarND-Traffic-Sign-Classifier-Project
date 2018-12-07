@@ -19,6 +19,7 @@ Administrative Stuff
 - Finally, since there were no requirements mentioning the use of Tensorflow, Keras was the best option. Confirmed with community manager at Udacity
 2. The code i.e. jupyter notebook is named [Traffic_Sign_Classifier.ipynb](https://github.com/vikramriyer/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.ipynb)
 3. The html report is named [Traffic_Sign_Classifier.html](https://github.com/vikramriyer/CarND-Traffic-Sign-Classifier-Project/blob/master/Traffic_Sign_Classifier.html)
+4. The images downloaded from the web are kept in [external_images](https://github.com/vikramriyer/CarND-Traffic-Sign-Classifier-Project/tree/master/external_images) directory
 
 ## Steps
 
