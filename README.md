@@ -63,7 +63,41 @@ From the distribution plot it is evident that classes: "1,2,4,5,10,12,13,38" hav
 |![](readme_images/speed_limit_80.png)|![](readme_images/no_passing.png)|![](readme_images/priority_road.png)|
 |![](readme_images/yield.png)|![](readme_images/keep_right.png)|
 
-3. Preprocessing Data
+### Preprocessing Data
+The preprocessing steps we are going to follow are listed below <br>
+
+__Grayscale conversion__ <br>
+There are a lot of reasons why images are converted to gray scale in general cases like complexity of writing code for multiple channels, compute power, etc. The one that is applicable to us is that, if we look at the images in the dataset, the color does not seem to make much of difference. For example, a stop sign is a stop sign whether viewed in Black and white or gray or color. Though one may argue that the red color of stop sign makes it visible from a distance, the algorithms we use can view the images perfectly from a distance and without colors. So, for ease of processing, we will be using gray scale images.
+
+```python
+# converts an RGB image to GRAYSCALE
+def grayscale(img):
+    return cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
+```
+
+__Histogram Equalization__ <br>
+When the images have high contrast, the perception gets better. The histogram equalization technique increases the global contrast of the pixels in the image. Due to this operation, the differences in the pixels are highly visible. For example, an edge might be highlighted better if the contrast is well set.
+Since the images in our dataset have a lower resolution, this technique will help us identify the foreground and background pixels better.
+
+
+```python
+# performs histogra equalization
+def equalize(img):
+    return cv2.equalizeHist(img) # accepts only a gray scale image i.e. depth = 1
+```
+
+__Normalization__ <br>
+Normalization or min-max scaling is a technique by which the values in the image are scaled to a fixed range. In our case we will fit them between 0-1. Typically in a neural network architecture, convergence is faster if the data points follow a similar distribution. 
+The variance in the data is also reduced by using normalization after the zero-centering. This makes the computations faster as well, thus helping in faster convergence.
+
+
+```python
+def normalize(img):
+    return img/255
+```
+
+Let's view how the original image and preprocessed image look
+![](readme_images/preprocess_orig.png)
 
 4. Model Architecture
 
