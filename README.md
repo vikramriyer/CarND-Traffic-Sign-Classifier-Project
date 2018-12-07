@@ -23,7 +23,7 @@ Administrative Stuff
 
 ## Steps
 
-1. Dataset summary
+### Dataset summary
 
 Below are the statistics of the dataset.
 
@@ -47,7 +47,21 @@ So, in the preprocessing part of the notebook, we convert them to grayscale and 
 |Processed Image|32x32x1|1 (GRAYSCALE)|
 
 
-2. Dataset exploration
+### Dataset exploration
+
+Let's first see how the Classes are distributed. The below image will give us insights as to how many images are present in the __43__ classes that we discussed in the dataset summary section.
+
+![](readme_images/data_class_dist.png)
+
+From the distribution plot it is evident that classes: "1,2,4,5,10,12,13,38" have max number of examples in the dataset. Let's try to find out what the names associated with these classes and also the images.
+
+**WARNING:** The images have a very low resolution and hence might not be clear
+
+||||
+|:----:|:----:|:----:|
+|![](readme_images/speed_limit_30.png)|![](readme_images/speed_limit_50.png)|![](readme_images/speed_limit_70.png)|
+|![](readme_images/speed_limit_80.png)|![](readme_images/no_passing.png)|![](readme_images/priority_road.png)|
+|![](readme_images/yield.png)|![](readme_images/keep_right.png)|
 
 3. Preprocessing Data
 
